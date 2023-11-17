@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    background-color: white;
+    
+}
+
+.block1, .block2, .block3, .block4{
+display: flex;
+}
+#container_global{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border-width: 0.1px;
+    border-style: solid;
+    
+}
+
+.red {
+    background-color: #ff0000; /* Red */
+    
+}
+
+.blue {
+    background-color: #0000ff; /* Blue */
+}
