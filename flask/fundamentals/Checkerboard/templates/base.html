@@ -3,32 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Two Squares</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <title>{{pagetitle}}</title>
   </head>
   <body>
-    <div id="container_global">
+    {% block body %}
+
+    {% endblock %}
+    <!-- <div id="container_global">
+      {% for i in range (4): %}
       <div class="block1">
+        {% for j in range (4) %}
         <div class="square red"></div>
+        <div class="square blue"></div> -->
+        <!-- <div class="square red"></div>
         <div class="square blue"></div>
         <div class="square red"></div>
         <div class="square blue"></div>
         <div class="square red"></div>
-        <div class="square blue"></div>
-        <div class="square red"></div>
-        <div class="square blue"></div>
+        <div class="square blue"></div> -->
+        <!-- {% endfor %}
       </div>
       <div class="block2">
+        {% for j in range (4) %}
         <div class="square blue"></div>
+        <div class="square red"></div> -->
+        <!-- <div class="square blue"></div>
         <div class="square red"></div>
         <div class="square blue"></div>
         <div class="square red"></div>
         <div class="square blue"></div>
-        <div class="square red"></div>
-        <div class="square blue"></div>
-        <div class="square red"></div>
+        <div class="square red"></div> -->
+        <!-- {% endfor %}
       </div>
-      <div class="block3">
+      {% endfor %} -->
+      <!-- <div class="block3">
         <div class="square red"></div>
         <div class="square blue"></div>
         <div class="square red"></div>
@@ -87,7 +96,7 @@
         <div class="square red"></div>
         <div class="square blue"></div>
         <div class="square red"></div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </body>
 </html>

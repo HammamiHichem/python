@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="container_global">
+    {% for x in range(10) %}
+    <div class="block1">
+            {% for y in range(10) %}
+                {% set is_red = (x + y) % 2 == 0 %}
+                <div class="{% if is_red %}red{% else %}blue{% endif %}">  
+                </div>
+            {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

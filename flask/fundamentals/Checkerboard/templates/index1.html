@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="container_global">
+      {% for i in range (4): %}
+      <div class="block1">
+        {% for j in range (2) %}
+        <div class="square red"></div>
+        <div class="square blue"></div>
+        {% endfor %}
+      </div>
+      <div class="block2">
+        {% for j in range (2) %}
+        <div class="square blue"></div>
+        <div class="square red"></div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+{% endblock %}

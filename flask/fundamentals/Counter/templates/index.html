@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Counter</title>
+</head>
+<body>
+    <h1>Visit Counter</h1>
+    <p>You have visited this site <strong>{{ actual_visits }}</strong> times.</p>
+
+    <p>Custom Counter: <strong>{{ custom_counter }}</strong></p>
+
+    <form action="{{ url_for('increment') }}" method="post">
+        <button type="submit">+1</button>
+    </form>
+
+    <form action="{{ url_for('increment_by_2') }}" method="post">
+        <button type="submit">+2</button>
+    </form>
+
+    <form action="{{ url_for('clear') }}" method="get">
+        <button type="submit">Clear Visits</button>
+    </form>
+</body>
+</html>
